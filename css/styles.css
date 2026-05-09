@@ -39,13 +39,7 @@ h3 {
     color: #2E2F42;
 }
 
-.section-text{
-    text-indent: 24px;
-}
-.section-title{
-   
-    text-align: center;
-}
+
 
 a{
     text-decoration: none;
@@ -53,24 +47,57 @@ a{
        
        
 }
+span {
+    color: #4D5AE5;
+}
 header{
     display: flex;
     padding-top: 1%;
     padding-left: 1%;
     border-bottom: 1px solid #E7E9FC;
+    justify-content: space-between;
     
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.main {
+    flex-grow: 1;
 }
 .navbar ul{
     display: flex;
+   
+    
 }
 .address ul{
     display: flex;
 }
 .section-two ul{
     display: flex;
+    justify-content: space-between;
+    
 }
 .section-two ul li a {
     display: block;
+}
+.logo {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.003em;
+    padding: 10px;
 }
 .navbar ul li a{
     display: block;
@@ -79,6 +106,7 @@ header{
         line-height: 1.5;
         letter-spacing: 0.003em;
         color: #2E2F42;
+    padding: 10px;
 }
 .navbar ul li a:hover, a:focus {
     text-decoration: none;
@@ -92,6 +120,7 @@ header{
         line-height: 1.5;
         letter-spacing:0.003em;
         color:#434455;
+        padding: 10px;
 }
 .address ul li a:hover,
 a:focus {
@@ -99,6 +128,12 @@ a:focus {
     color: #404BBF;
     cursor: pointer;
     font-weight: 700;
+}
+
+
+.section-title {
+
+    text-align: center;
 }
 .section-one{
     background-color: #2E2F42;
@@ -129,9 +164,10 @@ a:focus {
 }
 .section-team ul{
     display: flex;
+    justify-content: space-around;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 1%;
+   
     background-color: #F4F4FD;
 }
 .section-team ul li a {
@@ -163,34 +199,6 @@ a:focus {
     
 }
 
-
-span{
-    color:#4D5AE5;
-}
-.logo{
-    font-family: 'Raleway',Arial,sans-serif;
-    font-weight: 700;
-    font-size:18px;
-    line-height: 1.2;
-    letter-spacing: 0.003em;
-    
-}
-
-.container{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.container section {
-    padding-bottom: 120px;
-    padding-top: 120px;
-}
-.main{
-    flex-grow: 1;
-}
 .footer{
     background-color: #2E2F42;
     height: auto;
