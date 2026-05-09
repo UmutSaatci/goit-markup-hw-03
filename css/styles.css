@@ -8,11 +8,22 @@ font-family: 'Roboto',Arial, sans-serif;
    
     
 }
+* {
+    box-sizing: border-box;
+}
+img{
+    display: block;
+        max-width: 100%;
+        height: auto;
+}
 ul,ol{
   list-style-type: none; 
 }
 
-
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
 
 h2{
         font-size: 36px;
@@ -43,10 +54,26 @@ a{
        
 }
 header{
+    display: flex;
     padding-top: 1%;
     padding-left: 1%;
+    border-bottom: 1px solid #E7E9FC;
+    
+}
+.navbar ul{
+    display: flex;
+}
+.address ul{
+    display: flex;
+}
+.section-two ul{
+    display: flex;
+}
+.section-two ul li a {
+    display: block;
 }
 .navbar ul li a{
+    display: block;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -60,6 +87,7 @@ header{
     font-weight: 700;
 }
 .address ul li a {
+    display: block;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing:0.003em;
@@ -88,28 +116,53 @@ a:focus {
     background-color: #4D5AE5;
     color: white;
     width: 169px;
-    height: 56px;
+    height: auto;
     padding: 16px 32px 16px 32px;
     border-radius: 4px;
     border:0px;
-    margin: 20px;
+    
 }
 .section-one>button:hover,button:focus {
     background-color: #404BBF;
         color: white;
         cursor: pointer;
 }
-.section-team{
+.section-team ul{
+    display: flex;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 1%;
     background-color: #F4F4FD;
 }
-.our-portfolio{
+.section-team ul li a {
+    display: block;    
+
+}
+
+.our-portfolio ul{
+       display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         padding-top: 5%;
         padding-bottom: 5%;
         padding-left: 1%;
+        gap: 24;
+        
+        
+       
 }
+.our-portfolio .item{
+    display: block;
+    flex-basis: calc((100% - 48px) / 3);
+    border-bottom: 1px solid #e7e9fc;
+    
+    
+}
+.our-portfolio ul li a {
+    display: block;
+    
+}
+
 
 span{
     color:#4D5AE5;
@@ -122,10 +175,25 @@ span{
     letter-spacing: 0.003em;
     
 }
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+.main{
+    flex-grow: 1;
+}
 .footer{
-    padding-top:5%;
-    padding-left: 5%;
     background-color: #2E2F42;
-    height: 312px;
+    height: auto;
     color: white;
+    padding: 20px;
 }
