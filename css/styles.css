@@ -12,8 +12,8 @@ font-family: 'Roboto',Arial, sans-serif;
     box-sizing: border-box;
 }
 img{
-    display: block;
-        max-width: 100%;
+    width: 100%;
+        display: block;
         height: auto;
 }
 ul,ol{
@@ -22,7 +22,7 @@ ul,ol{
 
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 
 h2{
@@ -50,24 +50,35 @@ a{
 span {
     color: #4D5AE5;
 }
-header{
-    display: flex;
-    padding-top: 1%;
-    padding-left: 1%;
-    border-bottom: 1px solid #E7E9FC;
-    justify-content: space-between;
-    
+
+.context-text{
+    background-color: white;
+    padding: 32px 16px;
+    text-align: center;
 }
+.portfolio-text{
+    background-color: white;
+        padding: 32px 16px;
+       
+}
+
 .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    width: 1158px;
+    max-width: 1440px;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
+header .container{
+    display: flex;
+    padding: 24px 156px;
+    border-bottom: 1px solid #E7E9FC;
+    justify-content: space-between;
+    align-items: center;
+    
+}
 
-.container section {
+
+ section {
     padding-bottom: 120px;
     padding-top: 120px;
 }
@@ -75,21 +86,27 @@ header{
 .main {
     flex-grow: 1;
 }
-.navbar ul{
-    display: flex;
-   
-    
-}
+
 .address ul{
     display: flex;
 }
-.section-two ul{
-    display: flex;
-    justify-content: space-between;
+.section-two .container{
+  
+    padding: 156px 120px;
     
 }
-.section-two ul li a {
+.section-two .container ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+
+}
+.section-two .container ul li {
     display: block;
+    width: 264px;
+    height: 104px;
+    
 }
 .logo {
     font-family: 'Raleway', Arial, sans-serif;
@@ -97,7 +114,15 @@ header{
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.003em;
-    padding: 10px;
+    padding-right: 76px;
+}
+ .navbar{
+    padding-right: 332px;
+ }
+.navbar ul {
+    display: flex;
+
+
 }
 .navbar ul li a{
     display: block;
@@ -132,22 +157,26 @@ a:focus {
 
 
 .section-title {
-
+    padding-bottom: 48px;
     text-align: center;
 }
 .section-one{
+    display: block;
     background-color: #2E2F42;
     text-align: center;
+    width: 100%;
+    padding: 188px 472px;
+   
     
 }
-.section-one>h1{
-    font-size: 56px;
+.section-one .container>h1{
+         font-size: 56px;
         letter-spacing: 0.002em;
-        line-height: 1.75;
+        line-height: 1.07;
         font-weight: 700;
         color: #FFFFFF;
 }
-.section-one>button{
+.section-one .container>button{
     background-color: #4D5AE5;
     color: white;
     width: 169px;
@@ -157,51 +186,67 @@ a:focus {
     border:0px;
     
 }
-.section-one>button:hover,button:focus {
+.section-one .container>button:hover,button:focus {
     background-color: #404BBF;
         color: white;
         cursor: pointer;
 }
-.section-team ul{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 5%;
-    padding-bottom: 5%;
+.section-team{
    
     background-color: #F4F4FD;
-}
-.section-team ul li a {
-    display: block;    
-
+    
+    
 }
 
-.our-portfolio ul{
-       display: flex;
+.section-team .container{
+    padding: 120px 156px;
+}
+.section-team .container ul{
+        display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        padding-left: 1%;
-        gap: 24;
-        
-        
-       
+        gap: 24px;
+        padding: 0;
+        margin: 0;
+
+   
 }
-.our-portfolio .item{
-    display: block;
-    flex-basis: calc((100% - 48px) / 3);
-    border-bottom: 1px solid #e7e9fc;
-    
-    
-}
-.our-portfolio ul li a {
-    display: block;
-    
+.section-team .container ul li{
+   
+        width: calc((100% - 72px) / 4);
+        border: 1px solid #E7E9FC;
+
 }
 
+.our-portfolio .container{
+    padding: 120px 156px;
+}
+
+.our-portfolio .container ul{
+            display: flex;
+            flex-wrap: wrap;         
+            gap: 24px;
+            padding: 0;
+            margin: 0;
+}
+
+.our-portfolio .container .item {
+    
+    width: calc((100% - 48px) / 3);
+    border-bottom: 1px solid #E7E9FC;
+   
+}
 .footer{
     background-color: #2E2F42;
-    height: auto;
+    
+}
+.footer .container{
     color: white;
-    padding: 20px;
+    padding: 100px 156px;
+}
+.footer .container .content {
+        width: 264px;
+        height: 112px;
+}
+.footer .container p {
+   padding-top: 16px;
 }
