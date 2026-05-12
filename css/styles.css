@@ -63,25 +63,20 @@ span {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1158px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 header .container{
     display: flex;
-    padding: 24px 156px;
+    padding: 24px 15px;
     border-bottom: 1px solid #E7E9FC;
     justify-content: space-between;
     align-items: center;
     
 }
 
-
- section {
-    padding-bottom: 120px;
-    padding-top: 120px;
-}
 
 .main {
     flex-grow: 1;
@@ -92,18 +87,19 @@ header .container{
 }
 .section-two .container{
   
-    padding: 156px 120px;
+    padding: 120px 15px;
     
 }
 .section-two .container ul{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 24px;
     align-items: center;
 
 }
 .section-two .container ul li {
-    display: block;
+    display: flex;
+        flex-direction: column;
     width: 264px;
     height: 104px;
     
@@ -114,11 +110,9 @@ header .container{
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.003em;
-    padding-right: 76px;
+  
 }
- .navbar{
-    padding-right: 332px;
- }
+
 .navbar ul {
     display: flex;
 
@@ -131,7 +125,7 @@ header .container{
         line-height: 1.5;
         letter-spacing: 0.003em;
         color: #2E2F42;
-    padding: 10px;
+  
 }
 .navbar ul li a:hover, a:focus {
     text-decoration: none;
@@ -140,12 +134,12 @@ header .container{
     font-weight: 700;
 }
 .address ul li a {
-    display: block;
+  
         font-size: 16px;
         line-height: 1.5;
         letter-spacing:0.003em;
         color:#434455;
-        padding: 10px;
+      
 }
 .address ul li a:hover,
 a:focus {
@@ -165,7 +159,7 @@ a:focus {
     background-color: #2E2F42;
     text-align: center;
     width: 100%;
-    padding: 188px 472px;
+    padding: 120px 0;
    
     
 }
@@ -194,44 +188,48 @@ a:focus {
 .section-team{
    
     background-color: #F4F4FD;
-    
-    
+
 }
 
 .section-team .container{
-    padding: 120px 156px;
+    padding: 120px 15px;
+  
 }
 .section-team .container ul{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
         gap: 24px;
         padding: 0;
         margin: 0;
-
+       
    
 }
 .section-team .container ul li{
-   
-        width: calc((100% - 72px) / 4);
+
+    display: flex;
+        flex-direction: column;
+        height: 100%;
+       
         border: 1px solid #E7E9FC;
 
 }
 
 .our-portfolio .container{
-    padding: 120px 156px;
+    padding: 120px 15px;
 }
 
 .our-portfolio .container ul{
-            display: flex;
-            flex-wrap: wrap;         
+             display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
             gap: 24px;
             padding: 0;
             margin: 0;
 }
 
 .our-portfolio .container .item {
-    
-    width: calc((100% - 48px) / 3);
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid #E7E9FC;
    
 }
@@ -241,7 +239,7 @@ a:focus {
 }
 .footer .container{
     color: white;
-    padding: 100px 156px;
+    padding: 100px 15px;
 }
 .footer .container .content {
         width: 264px;
